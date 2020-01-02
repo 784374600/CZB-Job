@@ -1,8 +1,11 @@
 package com.fzubb.model.dto;
 
+import lombok.Builder;
 import lombok.Data;
+import org.springframework.util.StringUtils;
 
 @Data
+@Builder
 public class Student {
      String qqId;
      String nickName;
@@ -17,4 +20,7 @@ public class Student {
      String sex;
      String grade;
      String place;
+     public  boolean unbind(){
+          return StringUtils.isEmpty(id);
+     }
 }

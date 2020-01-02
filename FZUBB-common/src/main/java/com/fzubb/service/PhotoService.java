@@ -1,4 +1,4 @@
-package com.fzubb.dubboservice.service;
+package com.fzubb.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

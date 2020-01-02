@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="" />
+    <list default="true" id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBWriteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/condition/PublicTaskCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/dto/TaskVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/request/PageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/response/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/BaiduServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/HttpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/QQServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/SchoolSystemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/TimeLimitEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/QQService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/SchoolSystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/TaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/StudentInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/StudentInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/dto/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/dto/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/response/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/response/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +45,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VjK14eeZQpgUdAVbnB6Y0qMZKE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,6 +65,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/FZUBB-common/src/main/java" />
@@ -59,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577760845416</updated>
-      <workItem from="1577760848005" duration="15534000" />
+      <workItem from="1577760848005" duration="16559000" />
+      <workItem from="1577930752663" duration="20634000" />
     </task>
     <servers />
   </component>
@@ -67,14 +110,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2472" y="178" key="#Project_Structure" timestamp="1577779768145">
+    <state x="2472" y="178" key="#Project_Structure" timestamp="1577945858145">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state x="2472" y="178" key="#Project_Structure/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577779768145" />
-    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1577779305118">
+    <state x="2472" y="178" key="#Project_Structure/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577945858145" />
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1577968194321">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577779305118" />
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577968194321" />
+    <state x="2547" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1577950842843">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2547" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577950842843" />
     <state x="2655" y="378" width="449" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577778456491">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
@@ -83,33 +130,33 @@
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
     <state x="2554" y="260" key="FileChooserDialogImpl/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577763897106" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577775043633">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577785409051">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577775043633" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577775043633">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577785409051" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577785409051">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577775043633" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577775043632">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577785409051" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577785409051">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577775043632" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577775043633">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577785409051" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577785409051">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577775043633" />
-    <state x="2360" y="94" key="SettingsEditor" timestamp="1577779799475">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577785409051" />
+    <state x="2360" y="94" key="SettingsEditor" timestamp="1577948127565">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577779799475" />
+    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577948127565" />
     <state x="2254" y="214" key="new project wizard" timestamp="1577773798350">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
     <state x="2254" y="214" key="new project wizard/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577773798350" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577781936949">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577959442256">
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577781936949" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1577959442256" />
   </component>
 </project>

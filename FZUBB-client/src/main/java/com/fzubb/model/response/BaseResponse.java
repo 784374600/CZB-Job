@@ -11,7 +11,7 @@ public class BaseResponse<T> {
        T data;
 
       public enum  BussinessEnum{
-               success(0,"成功"),param_error(-1,"{0}参数错误");
+               success(0,"成功"),param_error(-1,"{0}参数错误"),unbind_student(-2,"未绑定教务处账号");
                int code;
                String message;
                 BussinessEnum(int code,String message){
@@ -49,5 +49,11 @@ public class BaseResponse<T> {
               baseResponse.setMessage(MessageFormat.format(BussinessEnum.param_error.getMessage(),param));
               return  baseResponse;
        }
+    public  static  <T> BaseResponse<T> unbind(){
+        BaseResponse<T> baseResponse=new BaseResponse<T>();
+        baseResponse.setCode(BussinessEnum.unbind_student.getCode());
+        baseResponse.setMessage(MessageFormat.format(BussinessEnum.unbind_student.getMessage(),null));
+        return  baseResponse;
+    }
 
 }

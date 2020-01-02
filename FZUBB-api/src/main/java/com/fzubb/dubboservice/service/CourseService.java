@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface CourseService {
      List<Course>  getCourses(String qqId);
+     List<Course> updateCourses(String qqId,List<Course> courses);
+     int deleteCourses(String qqId);
 }

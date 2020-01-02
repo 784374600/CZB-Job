@@ -7,5 +7,6 @@ import java.util.Map;
 
 public interface StudentInfoService {
       Student  getInfo(String qqId);
-      Student updateInfo(Map<String,String> params);
+      Student updateInfo(Student student);
+      int deleteInfo(String qqId);
 }
