@@ -10,6 +10,7 @@ public class Course {
     String name;
     String teacher;
     List<Teach> teachList;
+    Integer type=0;//0表示每周，1表示单周上课，2表示双周上课
     @Data
     public static  class  Teach{
          String place;

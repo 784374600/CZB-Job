@@ -14,6 +14,7 @@ import org.apache.hc.core5.util.Timeout;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 public class HttpUtil {
@@ -28,7 +29,7 @@ public class HttpUtil {
         else {
             request = new HttpPost(url);
             if (content != null && !content.equals("")) {
-                StringEntity entity = new StringEntity(content,Charset.forName("utf-8"));
+                StringEntity entity = new StringEntity(content, StandardCharsets.UTF_8);
                 request.setEntity(entity);
             }
         }
@@ -49,7 +50,7 @@ public class HttpUtil {
         try {
             response = httpClient.execute(request);
             if (charset==null)
-                charset=Charset.forName("utf-8");
+                charset= StandardCharsets.UTF_8;
             resContentontent= EntityUtils.toString(response.getEntity(),charset);
         } catch (Exception e) {
             throw new HttpException("url:"+url+" request error");
@@ -63,23 +64,22 @@ public class HttpUtil {
         }
         return   resContentontent;
     }
-    public  static  String get(CloseableHttpClient httpClient, String url,Map<String,String> headers, String content){
+    public  static  String get(CloseableHttpClient httpClient, String url,Map<String,String> headers, String content) throws HttpException{
         return  request(httpClient,url, "GET",headers,content,null);
     }
-    public  static  String get(CloseableHttpClient httpClient,String url, Map<String,String> headers, String content, Charset charset ){
+    public  static  String get(CloseableHttpClient httpClient,String url, Map<String,String> headers, String content, Charset charset  ) throws HttpException{
         return  request(httpClient,url, "GET",headers,content,charset);
     }
-    public  static   String  post(CloseableHttpClient httpClient, String url,Map<String,String> headers, String content){
+    public  static   String  post(CloseableHttpClient httpClient, String url,Map<String,String> headers, String content) throws HttpException{
         return  request(httpClient,url, "POST",headers,content,null);
     }
-    public  static   String  post( CloseableHttpClient httpClient,String url,Map<String,String> headers, String content,Charset charset){
+    public  static   String  post( CloseableHttpClient httpClient,String url,Map<String,String> headers, String content,Charset charset) throws HttpException{
         return  request(httpClient,url, "POST",headers,content,charset);
     }
 
 
     public   static CloseableHttpClient getHttpClient(){
        return  HttpClients.custom().build();
-
     }
 
 }

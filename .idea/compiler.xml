@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FZUBB-api" />
+        <module name="FZUBB-dao" />
         <module name="FZUBB-backup" />
         <module name="FZUBB-client" />
         <module name="FZUBB-common" />
-        <module name="FZUBB-dao" />
+        <module name="FZUBB-api" />
+        <module name="FZUBB-backend" />
       </profile>
     </annotationProcessing>
   </component>

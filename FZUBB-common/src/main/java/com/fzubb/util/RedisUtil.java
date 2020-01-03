@@ -1,7 +1,7 @@
-package com.fzubb.service.remote.Utils.DataStore;
+package com.fzubb.util;
 
-import com.Entity.QQInfo;
-import com.Pojo.TestEntity;
+
+import com.fzubb.service.remote.Utils.DataStore.ThreadContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Component;
@@ -27,15 +27,6 @@ public class RedisUtil {
     private SetOperations<String, Object> setOp;
     @Autowired
     private ZSetOperations<String, Object> zSetOp;
-    public   static  String getOpenId(){
-        if (TestEntity.test)
-            return "7844";
-        String openId= (String)getHash("sessionId-openId",(String) ThreadContext.get("sessionId"));
-        return  openId;
-    }
-    public  static QQInfo getQQInfo(){
-        return  (QQInfo)RedisUtil.getHash("openId-qqInfo",getOpenId());
-    }
     public  static  void putSet(String key,Object value){
             instance.setOp.add(key, value);
     }
@@ -63,7 +54,7 @@ public class RedisUtil {
     public  static  void putString(String key, Object value, long time, TimeUnit timeUnit){
          instance.valueOp.set(key, value, time, timeUnit);
     }
-    public  static  Object getString(String key){
+    public  static  String get(String key){
         try {
             return  instance.valueOp.get(key);
         } catch (Exception e) {

@@ -1,6 +1,7 @@
-package com.fzubb.service.remote.Utils.Tool;
+package com.fzubb.util;
 
 
+import com.fzubb.service.remote.Utils.Tool.ObjectUtil;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;

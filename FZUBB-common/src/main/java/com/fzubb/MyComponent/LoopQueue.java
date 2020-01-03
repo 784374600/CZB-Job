@@ -1,5 +1,7 @@
 package com.fzubb.MyComponent;
 
+import java.util.Collection;
+
 public class LoopQueue<T>{
       public Node head;
       public Node tail;
@@ -10,24 +12,26 @@ public class LoopQueue<T>{
               return  null;
           if(cur==null)
               cur = head;
-          else  if(cur==tail)
-              cur=head;
           else
               cur=cur.next;
           return  cur.value;
       }
       public   void add(T value){
              if(empty){
-                 if(head==null)
-                  head=new Node(null, null);
-                  head.value=value;
-                  tail=head;
-                  empty=false;
+                 if(head==null) {
+                     head = new Node(null, null);
+                     tail=head;
+                     tail.next=head;
+                 }
+                 head.value=value;
+                 tail=head;
+                 empty=false;
              }else {
                    Node p=tail.next;
-                   if(p==null) {
+                   if(p==head) {
                        p = new Node(null, null);
                        tail.next=p;
+                       p.next=head;
                    }
                    p.value=value;
                    tail=p;
@@ -47,6 +51,12 @@ public class LoopQueue<T>{
           if(values!=null)
               for (int i=0;i<values.length;i++)
                   add(values[i]);
+      }
+      public  void  add(Collection<T> collection){
+          if(collection!=null){
+              for (T a:collection)
+                  add(a);
+          }
       }
       public  class  Node{
           T  value;

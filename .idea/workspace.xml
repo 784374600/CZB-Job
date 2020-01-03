@@ -1,193 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33bcd134-e5ce-416c-9b12-df266ae7408f" name="Default Changelist" comment="">
+    <list default="true" id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-client/FZUBB-client.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FZUBB-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/BaiduServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/BaiduServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/HttpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/HttpException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/QQServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/QQServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/SchoolSystemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/SchoolSystemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/PropertiesUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/ThreadContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Net/HttpUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/FormatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FormatUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/RegexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RegexUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/FZUBB-api/target/" />
-    <ignored path="$PROJECT_DIR$/FZUBB-common/target/" />
-    <ignored path="$PROJECT_DIR$/FZUBB-dao/target/" />
-    <ignored path="$PROJECT_DIR$/FZUBB-backend/target/" />
-    <ignored path="$PROJECT_DIR$/FZUBB-client/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/SelectedComponent.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="NewLua" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/FZUBB-common/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/PropertiesUtil.java" />
-        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="E:\settings\settings(1).xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1140" />
-    <option name="height" value="850" />
-  </component>
+  <component name="ProjectId" id="1VsjOUYpLePAENKgvuSPwPR76fA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
-              <item name="MyComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
-              <item name="FZUBB-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578011657940" />
+    <property name="last_opened_file_path" value="D:/Program Files/Lua/5.1/lua.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -195,15 +84,27 @@
       <recent name="D:\CZB-Job\FZUBB-common\src\main\java\com\fzubb\service\remote" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="first.lua" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="D:\Program Files\Lua\5.1\lua.exe" />
+      <option name="file" value="first.lua" />
+      <option name="workingDir" value="$PROJECT_DIR$/FZUBB-api/src/main/resources" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -212,173 +113,100 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="33bcd134-e5ce-416c-9b12-df266ae7408f" name="Default Changelist" comment="" />
+      <changelist id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="" />
       <created>1577973976944</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577973976944</updated>
       <workItem from="1577973983038" duration="3431000" />
       <workItem from="1578006984962" duration="2593000" />
+      <workItem from="1578048672258" duration="1731000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6024000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34450403" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FZUBB-backend/FZUBB-backend.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/client5/httpclient5/5.0-beta6/httpclient5-5.0-beta6.jar!/org/apache/hc/client5/http/impl/classic/CloseableHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/QQService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/ObjectUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Net/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/FormatUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/OrderUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/RegexUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/ThreadContext.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/SelectedComponent.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="2293" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578050307707">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2293" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050307707" />
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1578040501929">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578040501929" />
+    <state x="2588" y="240" key="#first.lua" timestamp="1578048869260">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2588" y="240" key="#first.lua/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578048869260" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1578050304419">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050304419" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1578050403892">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403892" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1578050403892">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403892" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1578050403892">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403892" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1578050403892">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403892" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1578050403741">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578050403741" />
+    <state x="2293" y="148" key="SettingsEditor" timestamp="1578048968570">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2293" y="148" key="SettingsEditor/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578048968570" />
+    <state x="2672" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578022927713">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2672" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578022927713" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1578022445249">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578022445249" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578042492813">
+      <screen x="1920" y="0" width="1920" height="1020" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578042492813" />
   </component>
 </project>

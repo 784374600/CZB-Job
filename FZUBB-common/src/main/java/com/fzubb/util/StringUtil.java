@@ -1,16 +1,16 @@
-package com.fzubb.service.remote.Utils.Tool;
+package com.fzubb.util;
 
 public class StringUtil {
-    public  static  boolean Empty(String s){
+    public  static  boolean isEmpty(String s){
         if(s!=null && !s.equals("") )
             return  false;
         return  true;
     }
-    public  static  boolean Empty(String... s){
+    public  static  boolean existEmpty(String... s){
         if(s==null)
             return  true;
         for(int i=0;i<s.length;i++){
-            if(Empty(s[i]))
+            if(isEmpty(s[i]))
                 return  true;
         }
         return  false;

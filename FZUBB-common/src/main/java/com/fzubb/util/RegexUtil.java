@@ -1,4 +1,4 @@
-package com.fzubb.service.remote.Utils.Tool;
+package com.fzubb.util;
 
 import java.util.ArrayList;
 import java.util.List;

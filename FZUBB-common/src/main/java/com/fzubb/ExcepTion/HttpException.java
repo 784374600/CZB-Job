@@ -1,6 +1,6 @@
 package com.fzubb.ExcepTion;
-
-public class HttpException extends RuntimeException {
+/**http请求异常*/
+public class HttpException extends Exception {
     public HttpException(String message) {
         super(message);
     }
