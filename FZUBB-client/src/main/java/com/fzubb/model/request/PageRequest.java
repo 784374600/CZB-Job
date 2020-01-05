@@ -1,8 +1,8 @@
 package com.fzubb.model.request;
 
 public class PageRequest extends  BaseRequest {
-        int  index;
-        int  limit;
+        Integer  index;
+        Integer  limit;
 
     public int getIndex() {
         return index;

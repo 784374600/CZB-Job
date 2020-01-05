@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 public class PublicTaskVo {
-    Task task;
+    TaskVo task;
     PublicTask publicTask;
     List<Comment> comments;
 }

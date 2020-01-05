@@ -16,6 +16,8 @@ public enum CacheKey {
     Student_Tasks_Info("student_tasks_info_{0}","学生任务缓存 hashkey 参数：qqId ; hkey:taskId"),
     Student_Course_Tasks_Info("student_course_tasks_{0}","hash键 学生课程任务缓存 参数 qqId;  hashkey 课程id"),
 
+    PublicTask_Info("publictask_info_{0}_{1}","公开任务缓存 hash键 参数： qqId,taskId"),
+
     Task_Answer_Info("student_task_answer_info_{0}_{1}","hash键 学生错误答案与正确答案集合 参数：qqId,taskId hkey:wrong,right"),
 
     Task_Comments_OrderByTime("task_comments_OrderByTime_{0}_{1}","zset 参数：qqId,taskId")

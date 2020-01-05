@@ -1,5 +1,8 @@
 package com.fzubb.service.impl;
 
+import com.fzubb.constant.Constant;
+import com.fzubb.model.dto.PublicTaskId;
+import com.fzubb.model.vo.HomeDataPublicTaskVo;
 import com.fzubb.querycondition.CommentCondition;
 import com.fzubb.constant.CacheKey;
 import com.fzubb.mapper.TaskMapper;
@@ -8,6 +11,7 @@ import com.fzubb.model.dto.PublicTask;
 import com.fzubb.model.dto.Task;
 import com.fzubb.model.vo.PublicTaskVo;
 import com.fzubb.model.vo.TaskVo;
+import com.fzubb.querycondition.PublicTaskCondition;
 import com.fzubb.service.TaskService;
 import com.fzubb.util.IDUtil;
 import com.fzubb.util.RedisUtil;
@@ -18,6 +22,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 @Service
@@ -27,13 +32,13 @@ public class TaskServiceImpl implements TaskService {
     @Autowired
     TaskMapper taskMapper;
     @Override
-    public List<Task> getTasksByCourse(String qqId, String courseId) {
-        CacheKey cacheKey=CacheKey.Student_Course_Tasks_Info;
+    public List<Task> getTasks(String qqId) {
+        CacheKey cacheKey=CacheKey.Student_Tasks_Info;
         String key=cacheKey.getKeyWithParams(qqId);
-        List<Task> tasks= RedisUtil.hget(client,key , courseId);
+        List<Task> tasks= RedisUtil.hget(client,key ,qqId);
         if(tasks==null){
-            tasks=taskMapper.getTasksByCourse(qqId, courseId);
-            RedisUtil.hput(client, key, courseId, tasks);
+            tasks=taskMapper.getTasks(qqId);
+            RedisUtil.hput(client, key, qqId, tasks);
         }
         return  tasks;
     }
@@ -58,44 +63,101 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public TaskVo getTaskVo(Task task) {
+    public TaskVo getTaskVo(String qqId,long taskId) {
         CacheKey cacheKey=CacheKey.Task_Answer_Info;
-        String key=cacheKey.getKeyWithParams(task.getQqId(),task.getTaskId());
-        TaskVo taskVo=RedisUtil.hget(client, key, task.getTaskId());
+        String key=cacheKey.getKeyWithParams(qqId,taskId);
+        TaskVo taskVo=RedisUtil.hget(client, key, taskId);
         if(taskVo==null){
-            taskVo=taskMapper.getTask(task.getQqId(), task.getTaskId());
-            RedisUtil.hput(client, key, task.getTaskId(),taskVo);
+            taskVo=taskMapper.getTaskVo(qqId, taskId);
+            RedisUtil.hput(client, key, taskId,taskVo);
         }
         return  taskVo;
     }
 
     @Override
+    public PublicTask getPublicTask(String qqId, long taskId) {
+        CacheKey cacheKey=CacheKey.PublicTask_Info;
+        String key=cacheKey.getKeyWithParams(qqId,taskId);
+        PublicTask publicTask=new PublicTask();
+        Map<Object,Object> map=RedisUtil.hgetEntrys(client, key);
+        if(map==null || map.size()==0){
+            publicTask=taskMapper.getPublicTask(qqId,taskId);
+        }else{
+            publicTask.setQqId(qqId);
+            publicTask.setTaskId(taskId);
+            publicTask.setCommentNum((int) map.get(Constant.PublicTask_Comments));
+            publicTask.setThumbNum((int) map.get(Constant.PublicTask_Thumbs));
+            publicTask.setLatestCommentTime((long) map.get(Constant.PublicTask_LatestCommentTime));
+        }
+        return publicTask;
+    }
+
+    @Override
     public List<PublicTask> getPublicTasks(String qqId) {
-        return taskMapper.getPublishTask(qqId);
+        return taskMapper.getOwnPublicTasks(qqId);
     }
 
     @Override
     public PublicTaskVo getPublicTaskVo(PublicTask publicTask, CommentCondition condition) {
+        PublicTaskVo publicTaskVo=new PublicTaskVo();
+
         CacheKey commentCacheKey=CacheKey.Task_Comments_OrderByTime;
         String commentKey=commentCacheKey.getKeyWithParams(publicTask.getQqId(),publicTask.getTaskId());
-        int page=condition.getPage();int num=condition.getNum();
-        List<Comment> comments=new ArrayList<>(RedisUtil.zgetrev(client, commentKey,page*num,(page+1)*num-1));
-        if(CollectionUtils.isEmpty(comments)){
-            comments=taskMapper.get
+        int num=condition.getNum();String qqId=publicTask.getQqId();long taskId=publicTask.getTaskId();
+        List<Comment> comments=new ArrayList<>();Set<Comment> cacheResult;
+        long lastCommentId=condition.getLastCommentId();
+        if(lastCommentId==0)
+            cacheResult=RedisUtil.zgetrev(client,commentKey,0, num);
+        else
+            cacheResult=RedisUtil.zgetrevByScore(client, commentKey, 0, lastCommentId, 1,num);
+        if(!CollectionUtils.isEmpty(cacheResult))
+            comments.addAll(cacheResult);
+        if(comments.size()<num){
+             long last=0;
+             if(comments.size()>0)
+                 last=comments.get(comments.size()-1).getCommentId();
+            condition.setLastCommentId(last);condition.setNum(num-comments.size());
+            comments=taskMapper.getComments(publicTask.getQqId(), publicTask.getTaskId(), condition);
+            /*此处或许可以做优化，用消息队列来加快速度*/
+            for (Comment comment:comments){
+                RedisUtil.zput(client,commentKey, comment, comment.getCommentId());
+            }
         }
-        TaskVo taskVo=RedisUtil.zput(client, key, task.getTaskId());
-        return taskMapper.getPublicTaskVo(publicTask);
+        publicTaskVo.setComments(comments);
+
+        /*当首次点入详情页，添加任务详情，添加点赞，评论数等信息*/
+        if(lastCommentId==0){
+            TaskVo taskVo=getTaskVo(qqId,taskId);
+            publicTaskVo.setTask(taskVo);
+            publicTask=getPublicTask(qqId, taskId);
+        }
+        publicTaskVo.setPublicTask(publicTask);
+        return publicTaskVo;
     }
 
     @Override
-    public List<PublicTask> getPublicTaskByCourse(String courseId) {
-        return null;
+    public List<HomeDataPublicTaskVo> getHomeDataPublicTaskByCourse(String courseId, PublicTaskCondition condition) {
+
+        List<PublicTaskId>   ids=taskMapper.getPublicTaskIdsByCourse(courseId, condition);
+        if(CollectionUtils.isEmpty(ids))
+            return  null;
+        List<HomeDataPublicTaskVo> homeDataPublicTaskVos=new ArrayList<>();
+        for (PublicTaskId id : ids
+        ) {
+            HomeDataPublicTaskVo vo=new HomeDataPublicTaskVo();
+            vo.setTask(getTaskVo(id.getQqId(),id.getTaskId()));
+            vo.setPublicTask(getPublicTask(id.getQqId(), id.getTaskId()));
+            homeDataPublicTaskVos.add(vo);
+        }
+        return  homeDataPublicTaskVos;
     }
 
     @Override
     public PublicTask addPublicTask(Task task) {
         taskMapper.addPublicTask(task);
-        return null;
+        PublicTask publicTask=new PublicTask();
+        publicTask.setTaskId(task.getTaskId());
+        return publicTask;
     }
 
     @Override
@@ -106,7 +168,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Comment addComment(Comment comment) {
-        comment.setCommentId(IDUtil.timeIdWithParam(String.format("%04d", (int)((Math.random()*9+1)*1000))));
+        comment.setCommentId(IDUtil.timeIdWithParam(String.valueOf((int)((Math.random()*9+1)*1000))));
         taskMapper.addComment(comment);
         return comment;
     }

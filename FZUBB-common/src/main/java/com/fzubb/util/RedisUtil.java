@@ -3,6 +3,7 @@ package com.fzubb.util;
 
 import org.apache.dubbo.common.logger.Logger;
 import org.apache.dubbo.common.logger.LoggerFactory;
+import org.springframework.data.redis.connection.RedisZSetCommands;
 import org.springframework.data.redis.core.*;
 
 import java.text.MessageFormat;
@@ -59,6 +60,9 @@ public class RedisUtil {
     public static  void hput(RedisTemplate<String,Object> client,String key,Object hkey,Object value){
         client.opsForHash().put(key, hkey, value);
     }
+    public static  <T>  T hgetEntrys(RedisTemplate<String,Object> client,String key){
+        return  (T)client.opsForHash().entries(key);
+    }
     public static  <T>  T hget(RedisTemplate<String,Object> client,String key,Object hkey){
          return  (T)client.opsForHash().get(key, hkey);
     }
@@ -79,6 +83,14 @@ public class RedisUtil {
     public static  <T>  Set<T>  zgetrev(RedisTemplate<String,Object> client,String key,long start,long end
     ){
         return (Set<T>)client.opsForZSet().reverseRange(key, start, end);
+    }
+    /**zset key操作  比较分数,注意包括max边界值，在offset为0时*/
+    public static  <T>  Set<T> zgetrevByScore(RedisTemplate<String,Object> client,String key,double min,double max,int offset,int count
+    ){
+        return  (Set<T>)client.opsForZSet().reverseRangeByScore(key, min, max, offset, count);
+    }
+    private  static  <T>  Set<T> zgetByLex(RedisTemplate<String,Object> client, String key, RedisZSetCommands.Range range, RedisZSetCommands.Limit limit){
+        return (Set<T>)client.opsForZSet().rangeByLex(key, range, limit);
     }
 
 

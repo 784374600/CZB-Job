@@ -5,9 +5,9 @@ import lombok.Data;
 @Data
 public class PublicTask{
     String qqId;
-    long taskId;
-    int commentNum;
-    int thumbNum;
-    String createTime;
-    String newCommentTime;
+    Long taskId;
+    Integer commentNum;
+    Integer thumbNum;
+    Long createTime;
+    Long latestCommentTime;
 }

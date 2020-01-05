@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class Answer {
     String qqId;
-    long taskId;
+    Long taskId;
     String note;
     String[] content;
     String[] answer;

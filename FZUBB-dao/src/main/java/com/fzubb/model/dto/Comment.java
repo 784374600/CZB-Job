@@ -8,5 +8,4 @@ public class Comment {
     String qqId;
     long commentId;
     String content;
-    String createTime;
 }

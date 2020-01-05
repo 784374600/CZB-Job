@@ -8,4 +8,8 @@ public interface Constant {
     /**answer 常量*/
     String Wrong_Answer="wrongAnswer";
     String Right_Answer="rightAnswer";
+
+    String PublicTask_Comments="publicTaskComments";
+    String PublicTask_Thumbs="publicTaskThumbs";
+    String PublicTask_LatestCommentTime="publicTaskLatestCommentTime";
 }
