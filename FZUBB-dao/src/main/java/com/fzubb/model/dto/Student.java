@@ -2,6 +2,7 @@ package com.fzubb.model.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Tolerate;
 import org.springframework.util.StringUtils;
 
 @Data
@@ -20,6 +21,10 @@ public class Student {
      String sex;
      String grade;
      String place;
+     @Tolerate
+     public Student() {
+     }
+
      public  boolean unbind(){
           return StringUtils.isEmpty(id);
      }

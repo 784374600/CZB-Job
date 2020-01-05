@@ -1,23 +1,20 @@
 package com.fzubb.dubboservice.impl;
 
 import com.fzubb.dubboservice.FZUBBWriteService;
-import com.fzubb.dubboservice.service.CourseService;
-import com.fzubb.dubboservice.service.StudentInfoService;
-import com.fzubb.dubboservice.service.TaskService;
-import com.fzubb.model.dto.Comment;
-import com.fzubb.model.dto.Course;
-import com.fzubb.model.dto.Student;
-import com.fzubb.model.dto.Task;
+import com.fzubb.model.dto.*;
+import com.fzubb.service.*;
 import com.fzubb.model.request.BaseRequest;
 import com.fzubb.model.response.BaseResponse;
 import com.fzubb.service.remote.SchoolSystemService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class FZUBBWriteServiceImpl implements FZUBBWriteService {
     @Autowired
-    StudentInfoService studentInfoService;
+    StudentService studentService;
     @Autowired
     SchoolSystemService schoolSystemService;
     @Autowired
@@ -26,19 +23,23 @@ public class FZUBBWriteServiceImpl implements FZUBBWriteService {
     TaskService taskService;
     @Override
     public BaseResponse<Object> bindStudent(BaseRequest request) {
-        String qqId=request.getQqId(); String id=request.getParam("id");String pwd=request.getParam("pwd");
-        Student student=schoolSystemService.getStudentInfo(id,pwd);
-        studentInfoService.updateInfo(student);
-        List<Course> courses=schoolSystemService.getCoursesInfo(id,pwd);
-        courseService.updateCourses(qqId,courses);
-        return BaseResponse.success(null);
+        String qqId=request.getQqId(); String id=request.getParam("id");String psw=request.getParam("psw");
+        Student student=schoolSystemService.getStudentInfo(id,psw);
+        student.setQqId(qqId);
+        student=studentService.updateInfo(student);
+        List<Course> courses=schoolSystemService.getCoursesInfo(id,psw);
+        courseService.updateSC(qqId,courses);
+        Map<String,Object> map=new HashMap<>();
+        map.put("student",student);
+        map.put("courses", courses);
+        return BaseResponse.success(map);
     }
 
     @Override
     public BaseResponse<Object> unbindStudent(BaseRequest request) {
         String qqId=request.getQqId();
-        studentInfoService.deleteInfo(qqId);
-        courseService.deleteCourses(qqId);
+        studentService.deleteInfo(qqId);
+        courseService.deleteSC(qqId);
         return BaseResponse.success(null);
     }
 
@@ -53,12 +54,12 @@ public class FZUBBWriteServiceImpl implements FZUBBWriteService {
     }
 
     @Override
-    public BaseResponse<Task> addPublicTask(BaseRequest request) {
+    public BaseResponse<PublicTask> addPublicTask(BaseRequest request) {
         return BaseResponse.success(taskService.addPublicTask(request.getParam("task",Task.class)));
     }
 
     @Override
-    public BaseResponse<Task> deletePublicTask(BaseRequest request) {
+    public BaseResponse<PublicTask> deletePublicTask(BaseRequest request) {
         return BaseResponse.success(taskService.deletePublicTask(request.getParam("task",Task.class)));
     }
 

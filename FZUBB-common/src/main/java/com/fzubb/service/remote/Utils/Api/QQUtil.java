@@ -1,18 +1,9 @@
 package com.fzubb.service.remote.Utils.Api;
 
-import com.Utils.DataStore.PropertiesUtil;
-import com.Utils.DataStore.RedisUtil;
-import com.Utils.Net.HttpUtil;
-import com.Utils.Tool.FormatUtil;
-import com.Utils.Tool.StringUtil;
-import net.sf.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 public class QQUtil {
-    private  static  String token;
+    /*private  static  String token;
     public  static  String qqlogin(String js_code){
         QQConfig config=new QQConfig(PropertiesUtil.ConfigGet("appId"),PropertiesUtil.ConfigGet("appSecret"),
                 js_code,"authorization_code");
@@ -32,5 +23,5 @@ public class QQUtil {
          params.put("form_id", formId);
          params.put("data", data);
          return  JSONObject.fromObject(HttpUtil.post(PropertiesUtil.ConfigGet("QQ.sendTemplateMessage.address")+"?access_token="+token,headers,FormatUtil.JsonFy(params)));
-    }
+    }*/
 }

@@ -6,13 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FZUBB-dao" />
+        <module name="FZUBB-api" />
+        <module name="FZUBB-backend" />
         <module name="FZUBB-backup" />
         <module name="FZUBB-client" />
         <module name="FZUBB-common" />
-        <module name="FZUBB-api" />
-        <module name="FZUBB-backend" />
+        <module name="FZUBB-dao" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FZUBB-api" options="-parameters" />
+      <module name="FZUBB-backup" options="-parameters" />
+      <module name="FZUBB-client" options="-parameters" />
+      <module name="FZUBB-common" options="-parameters" />
+      <module name="FZUBB-dao" options="-parameters" />
+    </option>
   </component>
 </project>

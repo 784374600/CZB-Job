@@ -4,8 +4,9 @@ import lombok.Data;
 
 @Data
 public class Comment {
-    String taskId;
+    long taskId;
     String qqId;
+    long commentId;
     String content;
     String createTime;
 }

@@ -1,8 +1,7 @@
 package com.fzubb.dubboservice;
 
-import com.fzubb.condition.PublicTaskCondition;
-import com.fzubb.model.dto.Task;
-import com.fzubb.model.dto.TaskVo;
+import com.fzubb.querycondition.PublicTaskCondition;
+import com.fzubb.model.vo.TaskVo;
 import com.fzubb.model.request.BaseRequest;
 import com.fzubb.model.request.PageRequest;
 import com.fzubb.model.response.BaseResponse;

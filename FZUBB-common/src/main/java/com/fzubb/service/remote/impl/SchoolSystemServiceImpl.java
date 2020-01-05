@@ -15,20 +15,21 @@ import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.text.MessageFormat;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import java.util.*;
+@Service
 public class SchoolSystemServiceImpl implements SchoolSystemService {
     private  static Logger logger= LoggerFactory.getLogger(SchoolSystemServiceImpl.class);
 
     /**获取学生信息*/
     @Override
     public Student getStudentInfo(String id, String psw) throws SchoolSystemException {
-        Element name,sex,major,grade,place,colleage;
+
+        /*获取学生信息html*/
         CloseableHttpClient httpClient=HttpUtil.getHttpClient();
         String tempId = this.getSchoolSystemTempId(httpClient,id,psw);
         String res = null;
@@ -45,13 +46,17 @@ public class SchoolSystemServiceImpl implements SchoolSystemService {
                 e.printStackTrace();
             }
         }
+
+        /*分析教务处学生信息html*/
         Document document = Jsoup.parse(res);
+        Element name,sex,major,grade,place,colleage;
         name = document.getElementById("ContentPlaceHolder1_LB_xm");
         sex = document.getElementById("ContentPlaceHolder1_LB_xb");
         major = document.getElementById("ContentPlaceHolder1_LB_zymc");
         grade = document.getElementById("ContentPlaceHolder1_LB_nj");
         place = document.getElementById("ContentPlaceHolder1_LB_bh");
         colleage = document.getElementById("ContentPlaceHolder1_LB_xymc");
+
         return Student.builder().id(id).psw(psw).name(name.text()).sex(sex.text()).major(major.text())
                                           .grade(grade.text()).place(place.text()).colleage(colleage.text())
                                           .build();
@@ -59,6 +64,7 @@ public class SchoolSystemServiceImpl implements SchoolSystemService {
     /**获取课程信息*/
     @Override
     public List<Course> getCoursesInfo(String id, String psw) throws SchoolSystemException {
+        /*获取课程表html*/
            CloseableHttpClient httpClient=HttpUtil.getHttpClient();
            String  tempId=getSchoolSystemTempId(httpClient,id,psw);
            Map<String, String> headers = new HashMap<>();
@@ -77,10 +83,60 @@ public class SchoolSystemServiceImpl implements SchoolSystemService {
                    e.printStackTrace();
                }
            }
-           List<Course> courses=null;
 
-           /**此处待实现处理获取课程逻辑*/
-           return  courses;
+        /*分析课程表html*/
+            Map<String,Course> courseMap=new HashMap<>();
+            Document document = Jsoup.parse(res);
+            Element table = document.getElementById("LB_kb").getElementsByTag("table").first();
+            Elements trs=table.getElementsByTag("tr");
+            int i=-1;
+            for (Element tr: trs) {
+                i++;
+                if(i==0 || i==12)
+                    continue;
+                Elements tds=tr.getElementsByTag("td");
+                int offset=0;
+                if(i==1 || i==5 || i==9)
+                    offset=1;
+                int j=-1;
+                for (Element td: tds) {
+                    j++;
+                    String text=td.text();
+                    if(text.length()>20){
+                        //得到CoursesIds
+                        List<String> courseIds=RegexUtil.find(td.html(), "kcdm=([0-9]*)&", 1);
+                        List<Course> courses=decodes(td.text());
+                        for (int k=0;k<courses.size();k++) {
+                            Course course=courses.get(k);
+                            Course.Teach teach=course.getTeachList().get(0);
+                            teach.setDay(j-offset);
+                            teach.setTime1(i);
+                            teach.setTime2(i);
+                            course.setCourseId(courseIds.get(k));
+
+                            Course orign=courseMap.get(course.getCourseId());
+                            if(orign==null)
+                                courseMap.put(course.getCourseId(), course);
+                            else
+                                orign.getTeachList().addAll(course.getTeachList());
+                        }
+
+                    }
+
+                }
+
+            }
+
+        /*至此，得到了所有Course,对所有的Course的List<Course.Teach> 整合排序*/
+            List<Course> courses=new ArrayList<>();
+            for (Map.Entry<String,Course> entry:courseMap.entrySet()
+                 ) {
+                Course course=entry.getValue();
+                sortTeachList(course.getTeachList());
+                courses.add(course);
+            }
+
+        return  courses;
     }
 
     /**获取教务处临时登录许可证tempId*/
@@ -89,20 +145,90 @@ public class SchoolSystemServiceImpl implements SchoolSystemService {
         Map<String, String> headers = new HashMap<>();
         headers.put("Referer", "http://jwch.fzu.edu.cn/");
         headers.put("Content-Type", "application/x-www-form-urlencoded");
-        String loginRes = null;
+        String loginRes,tempId;
         try {
             loginRes = HttpUtil.post(httpClient,"http://59.77.226.32/logincheck.asp", headers, input);
+            tempId=RegexUtil.find(loginRes, "id=([0-9]+)", 1).get(0);
         } catch (HttpException e) {
             logger.warn(MessageFormat.format("学号{0} 密码{1}获取教务处临时Id异常",id,pwd));
             throw  new SchoolSystemException("获取教务处临时Id异常");
+        }catch (Exception e) {
+          throw new WrongPswException();
         }
-
-        String   tempId =  RegexUtil.find(loginRes, "id=([0-9]+)", 1).get(0);
         if (StringUtil.isEmpty(tempId)) {
             throw new WrongPswException();
         } else {
             return tempId;
         }
+    }
+    /**分析html得到每天的每一节课*/
+    private  List<Course> decodes(String text){
+        List<Course> courses=new ArrayList<>();
+        String[] words=text.split(" ");
+        int l=words.length;boolean[] f=new boolean[4];
+        Course course=new Course();
+        Course.Teach teach=new Course.Teach();
+        for(int i=l-1;i>=0;i--){
+            if(StringUtil.isEmpty(words[i]))
+                continue;
+
+            if(!f[0]){
+                String[] week=words[i].split("-");
+                teach.setWeek1(Integer.valueOf(week[0]));
+                teach.setWeek2(Integer.valueOf(week[1]));
+                f[0]=true;
+            }else  if(words[i].equals("[单]") || words[i].equals("[双]")){
+                if(words[i].equals("[单]"))
+                   course.setType(1);
+                else
+                    course.setType(2);
+                f[1]=true;f[2]=true;
+            }
+            else if(words[i].equals("[教学大纲|授课计划]")){
+                f[3]=true;f[1]=true;f[2]=true;
+            }else  if(!f[1] || !f[2]){
+                if(!words[i].startsWith("[")) {
+                    course.setTeacher(words[i]);
+                    f[1]=true;
+                }else {
+                    teach.setPlace(words[i].substring(1,words[i].length()-1));
+                    f[2]=true;
+                }
+            }else  if(f[3]){
+                course.setName(words[i]);
+                courses.add(course);
+                course.setTeachList(new ArrayList<>());
+                course.getTeachList().add(teach);
+                course=new Course();teach=new Course.Teach();
+                f[0]=false;f[1]=false;f[2]=false;f[3]=false;
+            }
+
+        }
+        return  courses;
+    }
+    /**对TeachList排序整合*/
+    private void sortTeachList(List<Course.Teach> teacheList){
+        teacheList.sort((o1,o2)->{
+            if(o1.getWeek1()-o2.getWeek1()!=0)
+                return  o1.getWeek1()-o2.getWeek1();
+            if(o1.getDay()-o2.getDay()!=0)
+                return  o1.getDay()-o2.getDay();
+
+            return  o1.getTime1()-o2.getTime1();
+        });
+        Course.Teach pre=null;
+        List<Course.Teach> list=new ArrayList<>();
+        for(int i=0;i<teacheList.size();i++){
+           Course.Teach cur=teacheList.get(i);
+           if(pre!=null &&cur.getDay()==pre.getDay()&& cur.getWeek1()==pre.getWeek1() && cur.getWeek2()==pre.getWeek2() && cur.getTime1()==pre.getTime1()+1)
+                pre.setTime2(cur.getTime1());
+            else {
+                pre = cur;
+                list.add(cur);
+            }
+        }
+        teacheList.clear();
+        teacheList.addAll(list);
     }
 
 }

@@ -2,11 +2,12 @@ package com.fzubb.model.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Tolerate;
 
 @Data
 @Builder
 public class Task {
-    String taskId;
+    long taskId;
     String qqId;
     String courseId;
     String theme;
@@ -15,4 +16,7 @@ public class Task {
     boolean isFinish;
     String[] content;
     String[] photos;
+    @Tolerate
+    public Task() {
+    }
 }

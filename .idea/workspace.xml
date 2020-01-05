@@ -1,63 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="">
+    <list default="true" id="33bcd134-e5ce-416c-9b12-df266ae7408f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/client_1_0_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/BaiduServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/BaiduServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/HttpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/HttpException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/QQServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/QQServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/SchoolSystemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/ExcepTion/SchoolSystemException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/LoopQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/MyComponent/Selector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBWriteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBWriteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/StudentInfoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/condition/PublicTaskCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/querycondition/PublicTaskCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBReadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/dto/TaskVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/vo/TaskVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Model/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Model/dto/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/CacheKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/CacheKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/PropertiesUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/DataStore/ThreadContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Net/HttpUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/FormatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FormatUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/RegexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RegexUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Tool/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/BaiduServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/BaiduServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/QQServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/QQServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/SchoolSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/SchoolSystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/CourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/TaskMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/FZUBB-common/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/FZUBB-backend/target/" />
+    <ignored path="$PROJECT_DIR$/FZUBB-client/target/" />
+    <ignored path="$PROJECT_DIR$/FZUBB-api/target/" />
+    <ignored path="$PROJECT_DIR$/FZUBB-dao/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/TaskServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addTask#0;class#TaskServiceImpl#0" />
+                <element signature="method#deleteTask#0;class#TaskServiceImpl#0" />
+                <element signature="e#2403#2404#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#2949#2958#0" expanded="true" />
+                <element signature="e#3340#3341#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/querycondition/CommentCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#del#0;class#RedisUtil#0" />
+                <element signature="method#expire#0;class#RedisUtil#0" />
+                <element signature="method#expireAt#0;class#RedisUtil#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="NewLua" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\CZB-Job\FZUBB-backend</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/config/MqConfig.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/BaiDuUtil.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/PhotoService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/PhotoService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/PhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/PhotoService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/Model/dto/Photo.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/BaiduServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/PhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/QQServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/mq/Message/DelImgMessage.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/TimeLimitEnum.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/CourseMapper.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/SchoolSystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/mq/Message/UpdateCoursesMessage.java" />
+        <option value="$PROJECT_DIR$/FZUBB-backend/src/main/java/com/fzubb/mq/message/handler/UpdateSCMessageHandler.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/MQConstant.java" />
+        <option value="$PROJECT_DIR$/FZUBB-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Answer.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/PublicTask.java" />
+        <option value="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/dto/TaskVo.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/ff.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/vo/TaskVo.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/vo/PublicTaskVo.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBWriteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Student.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Task.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/SystemConstant.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/condition/PublicTaskCondition.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/CacheKey.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Comment.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/IDUtil.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/Test.java" />
+        <option value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/querycondition/CommentCondition.java" />
+        <option value="$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../maven/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="E:\settings\settings(1).xml" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1140" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectId" id="1VsjOUYpLePAENKgvuSPwPR76fA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CZB-Job" type="462c0819:PsiDirectoryNode" />
+              <item name="FZUBB-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fzubb" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FZUBB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FZUBB" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FZUBB-api" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
@@ -69,14 +300,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578011657940" />
-    <property name="last_opened_file_path" value="D:/Program Files/Lua/5.1/lua.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578216635725" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -84,7 +315,32 @@
       <recent name="D:\CZB-Job\FZUBB-common\src\main\java\com\fzubb\service\remote" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fzubb.Test" />
+      <module name="FZUBB-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fzubb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="first.lua" type="lua.app" factoryName="Lua Application">
       <option name="program" value="D:\Program Files\Lua\5.1\lua.exe" />
       <option name="file" value="first.lua" />
@@ -95,6 +351,11 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -113,7 +374,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8516058-4a32-4214-8511-919c3de50223" name="Default Changelist" comment="" />
+      <changelist id="33bcd134-e5ce-416c-9b12-df266ae7408f" name="Default Changelist" comment="" />
       <created>1577973976944</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -121,8 +382,53 @@
       <workItem from="1577973983038" duration="3431000" />
       <workItem from="1578006984962" duration="2593000" />
       <workItem from="1578048672258" duration="1731000" />
+      <workItem from="1578110825721" duration="28647000" />
+      <workItem from="1578142477157" duration="17077000" />
+      <workItem from="1578203123341" duration="8990000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57723000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Web" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3961126" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="0" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.31161472" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -208,5 +514,514 @@
       <screen x="1920" y="0" width="1920" height="1020" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1020/0.0.1280.680@1920.0.1920.1020" timestamp="1578042492813" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/Utils/Api/QQUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/BaiduService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/QQServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/BaiduServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="method#getOCResult#0;class#BaiduServiceImpl#0" />
+            <element signature="method#getAccessToken#0;class#BaiduServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/TimeLimitEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Java/jdk/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="4396" column="29" selection-start-line="4396" selection-start-column="29" selection-end-line="4396" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Java/jdk/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="160" column="12" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.0/dubbo-2.7.0.jar!/org/apache/dubbo/common/utils/CollectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="232" column="52" lean-forward="true" selection-start-line="232" selection-start-column="52" selection-end-line="232" selection-end-column="52" />
+          <folding>
+            <element signature="e#7059#7060#0" expanded="true" />
+            <element signature="e#7124#7125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="809" column="19" selection-start-line="809" selection-start-column="19" selection-end-line="809" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-651">
+          <caret line="35" column="63" lean-forward="true" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/impl/SchoolSystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getStudentInfo#0;class#SchoolSystemServiceImpl#0" />
+            <element signature="method#getSchoolSystemTempId#0;class#SchoolSystemServiceImpl#0" />
+            <element signature="method#decodes#0;class#SchoolSystemServiceImpl#0" />
+            <element signature="method#sortTeachList#0;class#SchoolSystemServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/service/remote/SchoolSystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/mq/Message/UpdateSCMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/mq/Message/DelImgMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-backend/src/main/java/com/fzubb/mq/message/handler/UpdateSCMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-backend/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/MQConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInfo#0;class#StudentServiceImpl#0" />
+            <element signature="method#deleteInfo#0;class#StudentServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/DateUtil.java" />
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/FormatUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/ff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/vo/TaskVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/vo/PublicTaskVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/mapper/TaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/dubboservice/FZUBBWriteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/target/classes/com/fzubb/model/dto/Student.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.4/fastjson-1.2.4.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="202" column="30" selection-start-line="202" selection-start-column="30" selection-end-line="202" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/PublicTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBWriteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-client/src/main/java/com/fzubb/model/request/BaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/dubboservice/impl/FZUBBReadServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/constant/CacheKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/IDUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="method#getTime#1;class#IDUtil#0" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/model/dto/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/querycondition/PublicTaskCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-dao/src/main/java/com/fzubb/querycondition/CommentCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-api/src/main/java/com/fzubb/service/impl/TaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addTask#0;class#TaskServiceImpl#0" />
+            <element signature="method#deleteTask#0;class#TaskServiceImpl#0" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#2949#2958#0" expanded="true" />
+            <element signature="e#3340#3341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FZUBB-common/src/main/java/com/fzubb/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#del#0;class#RedisUtil#0" />
+            <element signature="method#expire#0;class#RedisUtil#0" />
+            <element signature="method#expireAt#0;class#RedisUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FZUBB</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -5,7 +5,6 @@ import lombok.Data;
 import java.util.List;
 @Data
 public class Course {
-    String id;
     String courseId;
     String name;
     String teacher;
@@ -18,5 +17,7 @@ public class Course {
          int week2;
          int  time1;
          int time2;
+         int day;
+
     }
 }
