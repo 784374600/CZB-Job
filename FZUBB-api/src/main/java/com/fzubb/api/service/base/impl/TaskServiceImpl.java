@@ -101,7 +101,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<PublicTask> getPublicTasksByCondition(PublicTaskCondition condition) {
-        List<PublicTaskId>  ids=taskMapper.getPublicTaskIdsByCourse(condition);
+        List<PublicTaskId>  ids=taskMapper.getPublicTaskIdsByCourse(Long.parseLong(IDUtil.getTime(0,8)+999999),condition);
         if(CollectionUtils.isEmpty(ids)) {
             return null;
         }

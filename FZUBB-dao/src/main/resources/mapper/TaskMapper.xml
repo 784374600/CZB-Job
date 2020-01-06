@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fzubb.dao.mapper.TaskMapper">
+    <insert id="addTask" parameterType="T">
+         insert into task(qqId,taskId
+        <if test="courseId!= null and courseId != ''">,courseId</if>
+        <if test="theme!= null and theme != ''">,theme</if>
+        <if test="note!= null and note != ''">,note</if>
+        <if test="endTime!= null">,endTime</if>
+        <if test="isFinish!= null">,isFinish</if>
+        <if test="content!= null ">,content</if>
+        <if test="photos!= null">,photos</if>
+        <if test="wrong!= null ">,wrong</if>
+        <if test="right!= null ">,right</if>
+        <if test="publicType!= null and publicType != ''">,publicType</if>)
+        values(#{qqId},#{taskId}
+        <if test="courseId!= null and courseId != ''">, #{courseId} </if>
+        <if test="theme!= null and theme != ''">, #{theme} </if>
+        <if test="note!= null and note != ''">, #{note} </if>
+        <if test="endTime!= null ">, #{endTime} </if>
+        <if test="isFinish!= null ">, #{isFinish} </if>
+        <if test="content!= null ">, #{content} </if>
+        <if test="photos!= null ">, #{photos} </if>
+        <if test="wrong!= null ">, #{wrong} </if>
+        <if test="right!= null ">, #{right} </if>
+        <if test="publicType!= null ">, #{publicType} </if>
+        )
+    </insert>
+    <delete id="deleteTask">
+        delete  from task where  qqId=#{qqId} and taskId=#{taskId}
+    </delete>
+    <select id="getTasks" resultType="T">
+        select * from task where qqId=#{qqId}
+    </select>
+    <select id="getTask" resultType="T">
+        select * from task where qqId=#{qqId} and taskId=#{taskId}
+    </select>
+
+    <insert id="addPubicTask" parameterType="PT">
+        insert into publictask(qqId,taskId,createTime) values (#{task.qqId},#{task.taskId},#{task.createTime})
+    </insert>
+    <delete id="deletePublicTask">
+        delete  from publictask where qqId=#{qqId} and taskId=#{taskId}
+    </delete>
+    <update id="updatePublicTask" parameterType="PT">
+        update  publictask set qqId=#{qqId}
+        <if test=" commentNum != null and commentNum != 0 ">,commentNum = #{commentNum} </if>
+        <if test=" thumbNum != null and thumbNum != 0 ">,thumbNum = #{thumbNum} </if>
+        <if test=" createTime != null and createTime != 0">,createTime = #{createTime} </if>
+        <if test=" latestCommentTime != null and latestCommentTime != 0">,latestCommentTime = #{latestCommentTime} </if>
+        where qqId=#{qqId} and taskId=#{taskId}
+    </update>
+    <select id="getPublicTask" resultType="PT">
+        select  * from publictask where qqId=#{qqId} and taskId=#{taskId}
+    </select>
+    <select id="getPublicTaskIdsByCourse" parameterType="com.fzubb.dao.querycondition.PublicTaskCondition" resultType="com.fzubb.dao.model.dto.PublicTaskId">
+             select  qqId,taskId from publictask courseId=#{courseId}
+        <choose>
+            <when test="condition.lastPublicTaskId !=null and condition.lastPublicTaskId  !=0">
+                and lastPublicTaskId  &lt; #{condition.lastPublicTaskId} limit #{condition.num}
+            </when>
+            <otherwise>
+                 limit #{condition.page}*#{condition.num},#{condition.num}
+            </otherwise>
+        </choose>
+    </select>
+    <select id="getOwnPublicTasks" resultType="PT">
+        select  * from publictask where qqId=#{qqId}
+    </select>
+
+    <insert id="addComment" parameterType="C">
+        insert  into comment(qqId,taskId,commentId<if test=" content != null and content != '' ">,content </if>)
+        values (#{qqId},#{taskId},#{commentId} <if test=" content != null and content != '' ">,#{content}</if>)
+    </insert>
+    <delete id="deleteComment">
+        delete  from comment where qqId={qqId} and taskId=#{taskId} and commentId=#{commentId};
+    </delete>
+    <select id="getComments">
+        select  * from comment  where qqId=#{qqId} and taskId=#{taskId}
+        <choose>
+            <when test="condition.lastCommentId !=null and condition.lastCommentId !=0">
+                   and lastCommentId &lt; #{condition.lastCommentId} limit #{condition.num}
+            </when>
+            <otherwise>
+                  limit #{condition.page}*#{condition.num},#{condition.num}
+            </otherwise>
+        </choose>
+
+
+    </select>
+</mapper>
