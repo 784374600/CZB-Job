@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fzubb.dao.mapper.CourseMapper">
+    <delete id="deleteSC">
+        delete  from sc where  qqId=#{qqId}
+    </delete>
+    <select id="getCourses" resultType="string">
+        select id from sc where qqId=#{qqId}
+    </select>
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fzubb.dao.mapper.StudentMapper">
+      <update id="update" parameterType="S">
+            replace into student(
+              qqId
+            <if test="nickName!= null and nickName != ''">,nickName</if>
+            <if test="avator!= null and avator != ''">,avator</if>
+            <if test="name!= null and name != ''">,name</if>
+            <if test="id!= null and id != ''">,id</if>
+            <if test="psw!= null and psw != ''">,psw</if>
+            <if test="colleage!= null and colleage != ''">,colleage</if>
+            <if test="major!= null and major != ''">,major</if>
+            <if test="sex!= null and sex != ''">,sex</if>
+            <if test="grade!= null and grade != ''">,grade</if>
+            <if test="place!= null and place != ''">,place</if>)
+
+            values (#{qqId}
+            <if test="qqId!= null and qqId != ''">, #{qqId} </if>
+            <if test="nickName!= null and nickName != ''">, #{nickName} </if>
+            <if test="avator!= null and avator != ''">, #{avator} </if>
+            <if test="name!= null and name != ''">, #{name} </if>
+            <if test="id!= null and id != ''">, #{id} </if>
+            <if test="psw!= null and psw != ''">, #{psw} </if>
+            <if test="colleage!= null and colleage != ''">, #{colleage} </if>
+            <if test="major!= null and major != ''">, #{major} </if>
+            <if test="sex!= null and sex != ''">, #{sex} </if>
+            <if test="grade!= null and grade != ''">, #{grade} </if>
+            <if test="place!= null and place != ''">, #{place} </if>
+
+            )
+      </update>
+      <delete id="delete">
+             delete from student where qqId=#{qqId}
+      </delete>
+      <select id="get" resultType="S">
+            select qqId,nickName,avator,name,id,colleage,major,sex,grade,place from student where  qqId=#{qqId}
+      </select>
+</mapper>
