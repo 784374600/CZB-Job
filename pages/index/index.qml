@@ -1,16 +1,5 @@
 <view class="container">
-<view class="padding flex flex-direction">
-  <button class="cu-btn bg-grey lg">玄灰</button>
-  <button class="cu-btn bg-red margin-tb-sm lg">嫣红</button>
-</view>
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+哈哈哈哈方法
+    <advice_card class="card"></advice_card>
+还ui哈
 </view>

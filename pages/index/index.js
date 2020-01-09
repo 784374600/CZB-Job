@@ -16,11 +16,12 @@ Page({
     })
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
+    if (app.userInfo) {
       this.setData({
-        userInfo: app.globalData.userInfo,
+        userInfo: app.userInfo,
         hasUserInfo: true
-      })
+      });
+      alert("还记得哈哈");
     } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
