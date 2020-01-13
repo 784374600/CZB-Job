@@ -1,0 +1,16 @@
+.home-swiper{
+  width:100%;
+  margin-bottom:20rpx;
+  background: linear-gradient(top,#39b54a 0%,#d7f0db 100%);
+}
+
+.cards{
+   background:#F1F1F1;
+   width:100%
+}
+.card{
+   background:#ffffff;
+   width:100%;
+   margin-bottom:20rpx;
+}
+

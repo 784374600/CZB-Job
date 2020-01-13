@@ -1,0 +1,8 @@
+.card-item{
+    width:100%;
+    flex-direction:row;
+}
+.card-item-avator{
+    width:65rpx;
+    height:65rpx;
+}
