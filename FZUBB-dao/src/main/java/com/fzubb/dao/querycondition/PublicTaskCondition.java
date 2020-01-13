@@ -17,8 +17,8 @@ public class PublicTaskCondition {
     /*课程范围限制*/
     String courseId;
 
-    /*上一条publicTaskId*/
-    String lastPublicTaskId;
+    /*上一条评论id*/
+    String lastCommentId;
     @Tolerate
     public PublicTaskCondition() {
     }

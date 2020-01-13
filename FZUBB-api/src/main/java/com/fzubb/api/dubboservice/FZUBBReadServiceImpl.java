@@ -69,7 +69,7 @@ public class FZUBBReadServiceImpl implements FZUBBReadService {
          PageResponse<HomeDataPublicTaskVo> response=new PageResponse<>();
          PublicTaskCondition condition=PublicTaskCondition.builder()
                  .courseId(request.getParam("courseId"))
-                 .lastPublicTaskId(request.getParam("lastPublicTaskId"))
+                 .lastCommentId(request.getParam("lastCommentId"))
                  .page(request.getParam("page",Integer.class)).num(request.getParam("num",Integer.class))
                  .timeLimit(request.getParam("timeLimit",Integer.class))
                  .build();

@@ -7,10 +7,4 @@
     <select id="getCourses" resultType="string">
         select id from sc where qqId=#{qqId}
     </select>
-    <update id="updateSc">
-        replace into sc(qqId,id) values
-           <foreach collection="courses" item="course" index="index" separator=",">
-               (#{qqId},concat(#{course.courseId},'_',#{course.teacher},'_',#{course.week1}))
-           </foreach>
-    </update>
 </mapper>

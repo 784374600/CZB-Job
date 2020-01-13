@@ -187,7 +187,7 @@ public class SchoolSystemServiceImpl implements SchoolSystemService {
                 if("[单]".equals(words[i])) {
                     course.setType(1);
                 } else {
-                    course.setType(2);
+                    course.setType(0);
                 }
                 f[1]=true;f[2]=true;
             }

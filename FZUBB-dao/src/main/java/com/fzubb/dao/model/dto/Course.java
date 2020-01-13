@@ -13,7 +13,7 @@ public class Course {
     List<Teach> teachList;
     int  week1;
     int week2;
-    Integer type=0;//0表示每周，1表示单周上课，2表示双周上课
+    Integer type=2;//2表示每周，1表示单周上课，0表示双周上课
 
     @Override
     public boolean equals(Object obj) {

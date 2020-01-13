@@ -14,10 +14,10 @@ public class IDUtil {
         return Long.parseLong(getTime(beginIndex,endIndex));
     }
     /**时间标准格式字符串 ：年（4位）+月（2位)+日（2位）+小时（2位)+分（2位)+秒（2位)*/
-    public  static  String getTime(){
+    private  static  String getTime(){
         return getTime(0, 14);
     }
-    public  static  String getTime(int beginIndex,int endIndex){
+    private  static  String getTime(int beginIndex,int endIndex){
         StringBuilder sb=new StringBuilder();
         Calendar calendar=Calendar.getInstance();
         String year=apply(calendar.get(Calendar.YEAR),4,'0');

@@ -13,8 +13,8 @@ public class Task {
     String courseId;
     String theme;
     String note;
-    Long endTime;
-    Boolean isFinish;
+    String endTime;
+    boolean isFinish;
     String[] content;
     String[] photos;
     Answer  wrong;
