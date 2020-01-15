@@ -14,6 +14,9 @@
         <module>FZUBB-common</module>
         <module>FZUBB-api</module>
         <module>FZUBB-dao</module>
+        <module>FZUBB-comment</module>
+        <module>FZUBB-user</module>
+        <module>FZUBB-course</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -47,17 +50,14 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
