@@ -1,0 +1,3 @@
+com\fzubb\student\model\User$UserBuilder.class
+com\fzubb\student\model\User.class
+com\fzubb\student\service\UserService.class
